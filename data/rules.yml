@@ -1,0 +1,31 @@
+version: "2.0"
+rules:
+- rule: faq
+  steps: 
+  - or:
+    - intent : deep_learning
+    - intent : machine_learning
+    - intent : cnn_nn
+    - intent : rnn_nn
+    - intent : lstm_nn
+    - intent : gan_nn
+    - intent : rbfn_nn
+    - intent : mlp_nn
+    - intent : som_nn
+    - intent : dbn_nn
+    - intent : rbm_nn
+    - intent : autoencoders
+  - action: action_faqs
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+- rule : fallback
+  steps :
+    - intent: nlu_fallback
+    - action: utter_ask_rephrase

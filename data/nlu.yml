@@ -1,0 +1,451 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: deep_learning
+  examples: |
+    - what is Deep Learning
+    - what is the meaning of Deep Learning 
+    - meaning of Deep Learning
+    - explain Deep Learning
+    - explain the meaning of Deep Learning
+    - can you explain the meaning of Deep Learning 
+    - could you explain the meaning of Deep Learning 
+    - may you explain the meaning of Deep Learning 
+    - can you explain Deep Learning
+    - could you explain Deep Learning 
+    - may you explain Deep Learning 
+    - describe Deep Learning
+    - can you describe Deep Learning 
+    - could you describe Deep Learning 
+    - may you describe Deep Learning 
+    - describe the meaning of Deep Learning
+    - can you describe the meaning of Deep Learning 
+    - could you describe the meaning of Deep Learning 
+    - may you describe the meaning of Deep Learning 
+    - what is the definition of Deep Learning
+
+- intent: machine_learning
+  examples: |
+    -	what is Machine Learning
+    -	what is the meaning of Machine Learning? 
+    -	meaning of Machine Learning
+    -	explain Machine Learning
+    -	explain the meaning of Machine Learning
+    -	can you explain the meaning of Machine Learning? 
+    -	could you explain the meaning of Machine Learning? 
+    -	may you explain the meaning of Machine Learning 
+    -	can you explain Machine Learning?
+    -	could you explain Machine Learning 
+    -	may you explain Machine Learning 
+    -	describe Machine Learning
+    -	can you describe Machine Learning? 
+    -	could you describe Machine Learning 
+    -	may you describe Machine Learning 
+    -	describe the meaning of Machine Learning
+    -	can you describe the meaning of Machine Learning? 
+    -	could you describe the meaning of Machine Learning? 
+    -	may you describe the meaning of Machine Learning 
+    -	what is the definition of Machine Learning?
+
+- intent: cnn_nn
+  examples: |
+    -	what is CNN
+    -	what is the meaning of CNN? 
+    -	meaning of CNN
+    -	explain CNN
+    -	explain the meaning of CNN
+    -	can you explain the meaning of CNN? 
+    -	could you explain the meaning of CNN? 
+    -	may you explain the meaning of CNN 
+    -	can you explain CNN?
+    -	could you explain CNN 
+    -	may you explain CNN 
+    -	describe CNN
+    -	can you describe CNN? 
+    -	could you describe CNN 
+    -	may you describe CNN 
+    -	describe the meaning of CNN
+    -	can you describe the meaning of CNN? 
+    -	could you describe the meaning of CNN? 
+    -	may you describe the meaning of CNN 
+    -	what is the definition of CNN?
+    -   is cnn a deep learning model?
+  
+- intent: lstm_nn
+  examples: |
+    -   is lstm a deep learning model?
+    -	what is LSTM
+    -	what is the meaning of LSTM? 
+    -	meaning of LSTM
+    -	explain LSTM
+    -	explain the meaning of LSTM
+    -	can you explain the meaning of LSTM? 
+    -	could you explain the meaning of LSTM? 
+    -	may you explain the meaning of LSTM 
+    -	can you explain LSTM?
+    -	could you explain LSTM 
+    -	may you explain LSTM 
+    -	describe LSTM
+    -	can you describe LSTM? 
+    -	could you describe LSTM 
+    -	may you describe LSTM 
+    -	describe the meaning of LSTM
+    -	can you describe the meaning of LSTM? 
+    -	could you describe the meaning of LSTM? 
+    -	may you describe the meaning of LSTM 
+    -	what is the definition of LSTM?
+
+- intent: rnn_nn
+  examples: |
+    -   is rnn a deep learning model?
+    -	what is RNN
+    -	what is the meaning of RNN? 
+    -	meaning of RNN
+    -	explain RNN
+    -	explain the meaning of RNN
+    -	can you explain the meaning of RNN? 
+    -	could you explain the meaning of RNN? 
+    -	may you explain the meaning of RNN 
+    -	can you explain RNN?
+    -	could you explain RNN 
+    -	may you explain RNN 
+    -	describe RNN
+    -	can you describe RNN? 
+    -	could you describe RNN 
+    -	may you describe RNN 
+    -	describe the meaning of RNN
+    -	can you describe the meaning of RNN? 
+    -	could you describe the meaning of RNN? 
+    -	may you describe the meaning of RNN 
+    -	what is the definition of RNN?
+
+- intent: gan_nn
+  examples: |
+    -   is gan a deep learning model?
+    -	what is GAN
+    -	what is the meaning of GAN? 
+    -	meaning of GAN
+    -	explain GAN
+    -	explain the meaning of GAN
+    -	can you explain the meaning of GAN? 
+    -	could you explain the meaning of GAN? 
+    -	may you explain the meaning of GAN 
+    -	can you explain GAN?
+    -	could you explain GAN 
+    -	may you explain GAN 
+    -	describe GAN
+    -	can you describe GAN? 
+    -	could you describe GAN 
+    -	may you describe GAN 
+    -	describe the meaning of GAN
+    -	can you describe the meaning of GAN? 
+    -	could you describe the meaning of GAN? 
+    -	may you describe the meaning of GAN 
+    -	what is the definition of GAN?
+
+- intent: rbfn_nn
+  examples: |
+    -   is RBFN a deep learning model?
+    -	what is RBFN
+    -	what is the meaning of RBFN? 
+    -	meaning of RBFN
+    -	explain RBFN
+    -	explain the meaning of RBFN
+    -	can you explain the meaning of RBFN? 
+    -	could you explain the meaning of RBFN? 
+    -	may you explain the meaning of RBFN 
+    -	can you explain RBFN?
+    -	could you explain RBFN 
+    -	may you explain RBFN 
+    -	describe RBFN
+    -	can you describe RBFN? 
+    -	could you describe RBFN 
+    -	may you describe RBFN 
+    -	describe the meaning of RBFN
+    -	can you describe the meaning of RBFN? 
+    -	could you describe the meaning of RBFN? 
+    -	may you describe the meaning of RBFN 
+    -	what is the definition of RBFN?
+
+- intent: mlp_nn
+  examples: |
+    -   is mlp a deep learning model?
+    -	what is MLP
+    -	what is the meaning of MLP? 
+    -	meaning of MLP
+    -	explain MLP
+    -	explain the meaning of MLP
+    -	can you explain the meaning of MLP? 
+    -	could you explain the meaning of MLP? 
+    -	may you explain the meaning of MLP 
+    -	can you explain MLP?
+    -	could you explain MLP 
+    -	may you explain MLP 
+    -	describe MLP
+    -	can you describe MLP? 
+    -	could you describe MLP 
+    -	may you describe MLP 
+    -	describe the meaning of MLP
+    -	can you describe the meaning of MLP? 
+    -	could you describe the meaning of MLP? 
+    -	may you describe the meaning of MLP 
+    -	what is the definition of MLP?
+  
+- intent: som_nn
+  examples: |
+    -   is som a deep learning model?
+    -	what is SOM
+    -	what is the meaning of SOM? 
+    -	meaning of SOM
+    -	explain SOM
+    -	explain the meaning of SOM
+    -	can you explain the meaning of SOM? 
+    -	could you explain the meaning of SOM? 
+    -	may you explain the meaning of SOM 
+    -	can you explain SOM?
+    -	could you explain SOM 
+    -	may you explain SOM 
+    -	describe SOM
+    -	can you describe SOM? 
+    -	could you describe SOM 
+    -	may you describe SOM 
+    -	describe the meaning of SOM
+    -	can you describe the meaning of SOM? 
+    -	could you describe the meaning of SOM? 
+    -	may you describe the meaning of SOM 
+    -	what is the definition of SOM?
+
+- intent: dbn_nn
+  examples: |
+    -   is dbn a deep learning model?
+    -	what is DBN
+    -	what is the meaning of DBN? 
+    -	meaning of DBN
+    -	explain DBN
+    -	explain the meaning of DBN
+    -	can you explain the meaning of DBN? 
+    -	could you explain the meaning of DBN? 
+    -	may you explain the meaning of DBN 
+    -	can you explain DBN?
+    -	could you explain DBN 
+    -	may you explain DBN 
+    -	describe DBN
+    -	can you describe DBN? 
+    -	could you describe DBN 
+    -	may you describe DBN 
+    -	describe the meaning of DBN
+    -	can you describe the meaning of DBN? 
+    -	could you describe the meaning of DBN? 
+    -	may you describe the meaning of DBN 
+    -	what is the definition of DBN?
+
+- intent: rbm_nn
+  examples: |
+    -   is rbm a deep learning model?
+    -	what is RBM
+    -	what is the meaning of RBM? 
+    -	meaning of RBM
+    -	explain RBM
+    -	explain the meaning of RBM
+    -	can you explain the meaning of RBM? 
+    -	could you explain the meaning of RBM? 
+    -	may you explain the meaning of RBM 
+    -	can you explain RBM?
+    -	could you explain RBM 
+    -	may you explain RBM 
+    -	describe RBM
+    -	can you describe RBM? 
+    -	could you describe RBM 
+    -	may you describe RBM 
+    -	describe the meaning of RBM
+    -	can you describe the meaning of RBM? 
+    -	could you describe the meaning of RBM? 
+    -	may you describe the meaning of RBM 
+    -	what is the definition of RBM?
+
+- intent: autoencoders
+  examples: |
+    -   is autoencoders a deep learning model?
+    -	what is autoencoders
+    -	what is the meaning of autoencoders? 
+    -	meaning of autoencoders
+    -	explain autoencoders
+    -	explain the meaning of autoencoders
+    -	can you explain the meaning of autoencoders? 
+    -	could you explain the meaning of autoencoders? 
+    -	may you explain the meaning of autoencoders 
+    -	can you explain autoencoders?
+    -	could you explain autoencoders 
+    -	may you explain autoencoders 
+    -	describe autoencoders
+    -	can you describe autoencoders? 
+    -	could you describe autoencoders 
+    -	may you describe autoencoders 
+    -	describe the meaning of autoencoders
+    -	can you describe the meaning of autoencoders? 
+    -	could you describe the meaning of autoencoders? 
+    -	may you describe the meaning of autoencoders 
+    -	what is the definition of autoencoders?
+
+
+# synonym
+
+- synonym: Deep learning
+  examples: |
+    - DL
+    - DeepL
+    - deeplearning
+
+- synonym: machine learning
+  examples: |
+    - ML
+    - machineL
+    - machinelearning
+
+- synonym: CNN
+  examples: |
+    - CNNs
+    - ConvNets Neural Network
+    - Convolution NN
+    - ConvNets
+    - ConvNet
+    - Convolution Neural Network
+
+- synonym: LSTM
+  examples: |
+    - LSTMs
+    - Long Short Term Memory Networks
+
+- synonym: RNN
+  examples: |
+    - RNNs
+    - Recurrent Neural Networks 
+
+- synonym: GAN
+  examples: |
+    - GANs
+    - Generative Adversarial Networks
+
+- synonym: RBFN
+  examples: |
+    - RBFNs
+    - Radial Basis Function Networks
+
+- synonym: MLP
+  examples: |
+    - MLPs
+    - Multilayer Perceptrons
+    
+- synonym: SOM
+  examples: |
+    - SOMs
+    - Self Organizing Maps
+
+- synonym: DBN
+  examples: |
+    - DBNs
+    - Deep Belief Networks
+
+- synonym: RBM
+  examples: |
+    - RBMs
+    - Restricted Boltzmann Machines
+    
+    
+    
+
+    
+    
+
+
+

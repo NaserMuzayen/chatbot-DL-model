@@ -1,0 +1,35 @@
+language: en
+pipeline:
+  - name: HFTransformersNLP
+    model_name: "bert"
+    model_weights: "bert-base-cased"
+  - name: LanguageModelTokenizer
+  - name: LanguageModelFeaturizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 1
+    max_ngram: 4
+  - name: CountVectorsFeaturizer
+    analyzer: char_wb
+    min_ngram: 3
+    max_ngram: 5
+  - name: DIETClassifier
+    epochs: 50
+    use_masked_language_model: True
+    transformers_layers: 4
+    constrain_similarities: true
+    random_seeds: 42
+  - name: EntitySynonymMapper
+  - name: FallbackClassifier
+    threshold: 0.7
+    ambiguity_threshold: 0.1
+
+policies:
+- name: MemoizationPolicy
+  max_history: 1
+- name: RulePolicy
+  core_fallback_threshold: 0.5
+  core_fallback_action_name: action_default_fallback
