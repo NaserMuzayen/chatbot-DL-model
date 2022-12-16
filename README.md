@@ -1,7 +1,5 @@
 # Chatbot for Deep Learning Model using rasa 2:
-
-Training model to give difination of Deep learning Models such as (CNN ,RNN, LSTM, ..........).
-
+Train an AI model to give definitions of Deep learning Models such as (CNN, RNN, LSTM, ..........) using rasa 2 framework.
 
 # requarments:
 rasa 2 </br>
